@@ -1,0 +1,10 @@
+This question was part of a skills assessment in a recruitment process. It asks me to create a query based on the price_plan_changes table, as described below
+
+price_plan_changes - table containing upsell from Basic to Smart and downsell events from Smart to Basic
+organization_id : identifier of a client
+plan_change_created_at : timestamp when the price plan change occurred
+previous_price_plan : name of the price plan that was switched from
+price_plan : name of the price plan that was switched towards
+
+Based on the price_plan_changes table, how many organizations upsold for the first
+time from Basic to Smart on a daily basis in Oct 2022?
