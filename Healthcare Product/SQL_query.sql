@@ -1,3 +1,13 @@
+# Use SQL to extract members with derived fields/flags. Output should only include Males who are 18 years or older. Final output should have one row per member and include the following columns:
+ 
+# a. User_id\par
+# b. date of first blood glucose check\par
+# c. count of blood glucose checks last 30-days\par
+# d. mean blood glucose value last 30-days\par
+# e. average blood glucose checks per day last 30-days\par
+# f. count hypoglycemic readings (bg_value < 54 mg/dL) lifetime\par
+# g. count hypoglycemic readings (bg_value < 54 mg/dL) last 30-days\par
+
 with recent_checks as
 (select 
  user_id
